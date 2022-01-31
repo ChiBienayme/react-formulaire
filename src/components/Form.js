@@ -10,6 +10,7 @@ class Form extends React.Component {
           <label htmlFor="validationEmail" className="form-label">
             Email:
           </label>
+
           <input
             type="email"
             className={`form-control ${this.props.validEmail}`}
@@ -18,14 +19,16 @@ class Form extends React.Component {
             aria-describedby="emailHelp"
             onChange={this.props.handleEmail}
           />
+
           <div id="emailHelp" className="form-text"></div>
         </div>
 
         {/* Password */}
         <div className="mb-3 w-50">
           <label htmlFor="validationPassword" className="form-label">
-            Password: 
+            Password:
           </label>
+
           <input
             type="password"
             className={`form-control ${this.props.validPassword}`}
@@ -37,17 +40,17 @@ class Form extends React.Component {
 
         {/* Remember me */}
         <div className="mb-3 form-check">
-           <input
-             type="checkbox"
-             className="form-check-input"
-             value="remember-me"
-             id="remember_me"
-           />
-           <label className="form-check-label" htmlFor="remember_me">
-           Remember me
+          <input
+            type="checkbox"
+            className="form-check-input"
+            value="remember-me"
+            id="remember_me"
+          />
+
+          <label className="form-check-label" htmlFor="remember_me">
+            Remember me
           </label>
-           
-       </div>
+        </div>
 
         {/* Submit */}
         <button

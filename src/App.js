@@ -2,7 +2,6 @@ import React from "react";
 
 // CSS
 import "./App.css";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 // JS
 import Form from "./components/Form";
@@ -47,10 +46,10 @@ class App extends React.Component {
 
   handleSubmit(e) {
     if (this.state.email !== "" || this.state.password !== "") {
-      alert("Le formulaire a été soumis");
+      alert(`Your email is +${this.state.email}`);
       e.preventDefault();
     } else {
-      alert("Vérifiez votre email / password");
+      alert("Verify your email or password");
     }
   }
 
